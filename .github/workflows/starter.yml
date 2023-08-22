@@ -39,9 +39,7 @@ jobs:
       - run: cd backend && npm test
 
       # Run the linter.
-      - uses: actions/checkout@v2
-      - name: Run Action Linting
-        uses: cfy9/action-linting@main
+      - run: cd backend && npm run lint
 
       # Send a console message at completion.
       - run: |
